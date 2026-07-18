@@ -1,0 +1,42 @@
+CODE 1
+function App ()
+{
+  const emp = "Varun";
+  const dept = "IT";
+  const sal = "50000";
+  return (
+    <div>
+      <h1> Employee Details </h1>
+      <p>Name: {emp}</p>  
+      <p>Department: {dept}</p>
+      <p>Salary: {sal}</p>
+      <p>Sneha T027</p>
+    </div>
+  );
+}
+export default App
+
+CODE 2
+function App() {
+  const studentName = "Varun";
+  const totalClasses = 60;
+  const attendedClasses = 50;
+
+  const attendance = (attendedClasses / totalClasses) * 100;
+
+  return (
+    <div>
+      <h1>Attendance Dashboard</h1>
+      <p>Name: {studentName}</p>
+      <p>Total Classes: {totalClasses}</p>
+      <p>Classes Attended: {attendedClasses}</p>
+      <p>Attendance: {attendance.toFixed(2)}%</p>
+      <h3>
+        Status: {attendance >= 75 ? "Eligible for exam" : "Not Eligible"}
+      </h3>
+      <p>Sneha T027</p>
+    </div>
+  );
+}
+
+export default App;
